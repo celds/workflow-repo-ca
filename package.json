@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+    "dev": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "prepare": "husky",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
