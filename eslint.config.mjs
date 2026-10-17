@@ -13,15 +13,16 @@ export default defineConfig([
   {
     files: ["tailwind.config.js", "**/*.config.js", "**/*.config.cjs"],
     languageOptions: {
-      sourceType: "commonjs",
+      sourceType: "module",
       globals: { ...globals.node },
     },
   },
 
   {
-    files: ["**/*.test.js", "**/*.spec.js"],
+    files: [ "tests/**/*.js"],
     languageOptions: {
       globals: {
+        ...globals.node,
         describe: "readonly",
         test: "readonly",
         it: "readonly",
